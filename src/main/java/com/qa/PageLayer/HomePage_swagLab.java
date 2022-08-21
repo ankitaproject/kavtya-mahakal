@@ -22,7 +22,10 @@ public class HomePage_swagLab extends TestBase {
 	private WebElement cart;
 	@FindBy(xpath="//button[@id='checkout']")
 	private WebElement chechout;
-
+	@FindBy(xpath="(//button[contains(@class,'btn btn')])[6]")
+	private WebElement bikeLightAddcart;
+	@FindBy(xpath="//h2[@class='complete-header']")
+	private WebElement Orderconfirm;
 	public HomePage_swagLab()
 	{
 		PageFactory.initElements(driver,this);
@@ -56,6 +59,15 @@ public class HomePage_swagLab extends TestBase {
 	public void clickOnchechout()
 	{
 		chechout.click();
+	}
+	public void clickOn_BikeLight_Addcart_button()
+	{
+		bikeLightAddcart.click();
+	}
+	public String orderConfirm_Text()
+	{
+		String oct = Orderconfirm.getText();
+		return oct;
 	}
 
 }

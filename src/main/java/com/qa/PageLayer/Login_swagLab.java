@@ -22,7 +22,6 @@ public class Login_swagLab extends TestBase {
 	{
 		PageFactory.initElements(driver,this);
 	}
-
 	public void enterUsername(String getuser)
 	{
 		username.sendKeys(getuser);

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.TestLayer.TestCaseForLogin">
+      <class name="com.qa.TestLayer.testCasesForPlacingOrder">
         <methods>
-          <include name="validUser_InvalidPassword"/>
+          <include name="ValidateBikeLightOrder"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.TestLayer.TestCaseForLogin -->
+      </class> <!-- com.qa.TestLayer.testCasesForPlacingOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

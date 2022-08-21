@@ -18,11 +18,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 
 	public static WebDriver driver;
-	public Login_swagLab log;
+	public static Login_swagLab log;
 	public UtilClass uc;
 	public ListenerClass lc;
 	public HomePage_swagLab home;
 	public CheckoutPage chk;
+	
 	@BeforeMethod
 	public void setup()
 	{
@@ -41,6 +42,7 @@ public class TestBase {
 			lc=new ListenerClass();
 			home=new HomePage_swagLab();
 			chk=new CheckoutPage();
+			
 		}
 	}
 	@AfterMethod
